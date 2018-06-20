@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       body {
+                background-image: url("mysteryMan.png") ;
+                height: 50%;
+                background-repeat: no-repeat;
+                background-size: 100% 700px; }
+            </style>
+</head>
+
+
+            
+
+
+
+<body>
+        <p id="demo"></p>
+      <div id=button > <button class="btn btn-light btn-lg" onclick="typeWriter()">Wake up</button>
+
+
+
+
+
+<script>
+var i = 0;
+var txt = 'OH!... I Wasn\'t sure if you were going to make it. You dont remmeber what happened?...'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+    
+</script>
+</body>
+</html>
