@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>A wild Neckbeard Appears</title>
     <style>
        body {
                 background-image: url("mysteryMan.png") ;
-                height: 50%;
+                height: 20%;
                 background-repeat: no-repeat;
-                background-size: 100% 700px; }
+                background-size: 100% 640px; }
+
+        #demo {
+    position: absolute;
+    bottom:150px;  
+    left:400px;
+    color: white;
+    font-size: 30px;
+    width:1400px;
+    
+
+}
+
+        .mysteryManFace {
+            border: solid 6px;
+            border-color:black ;
+            background-color: black;
+            margin-top:32%;
+            height:420px;
+            width:1005;
+
+        }
             </style>
 </head>
 
@@ -23,13 +44,16 @@
         <p id="demo"></p>
       <div id=button > <button class="btn btn-light btn-lg" onclick="typeWriter()">Wake up</button>
 
+        <div class= mysteryManFace> <img src="mystery_man_face.png" alt="A dirty neckbeard appears" ></div>
 
-
-
+        <button id="submit_btn">save</button>
 
 <script>
+
+
+
 var i = 0;
-var txt = 'OH!... I Wasn\'t sure if you were going to make it. You dont remmeber what happened?...'; /* The text */
+var txt = 'OH!... I Wasn\'t sure if you were going to make it. You dont remember what happened?...... Well maybe it will come back with time. Here\'s something that should help you regain your senses......*You Receive DEW OF THE MOUNTAIN*........I must go now.. but i suspect this wont be the last time we run into eachother!... '
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
@@ -39,6 +63,9 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+      
+
+
 
     
 </script>
